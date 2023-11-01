@@ -14,13 +14,6 @@ Android Studio
 Java Development Kit (JDK) - 17+
 Installation
 
-
-## Features
-
-# Project Foot
-
-This is an app for renting courts between players and court owners, using Java as its programming language and Google Firebase for the backend.
-
 ### What's being developed
 
 - Creation of two possible account types: player and court owner
