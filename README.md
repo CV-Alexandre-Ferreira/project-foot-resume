@@ -10,9 +10,9 @@ Use Android Studio to emulate the app.
 
 ## Prerequisites
 
-Android Studio
-Java Development Kit (JDK) - 17+
-Installation
+- Android Studio
+- Java Development Kit (JDK) - 17+
+- Installation
 
 ### What's being developed
 
