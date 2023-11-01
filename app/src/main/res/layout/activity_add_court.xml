@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddCourtActivity"
+    android:background="@color/background_grey">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:backgroundTint="@color/background_grey"
+            android:id="@+id/imageCourt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/defaultpic" />
+
+        <ImageView
+            android:id="@+id/imageCourt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/defaultpic" />
+
+        <ImageView
+            android:id="@+id/imageCourt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/defaultpic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <EditText
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:id="@+id/editTextCourtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="@string/court_name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <EditText
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:id="@+id/editTextCourtAddress"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="@string/address"
+        android:inputType="textPersonName"
+        android:padding="10dp" />
+
+    <com.santalu.maskara.widget.MaskEditText
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/contact_phone"
+        android:inputType="phone"
+        app:mask="(__) _____-____"
+        app:maskCharacter="_"
+        app:maskStyle="completable"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"/>
+
+    <CheckBox
+        android:textColor="@color/white"
+        android:id="@+id/checkbox_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wifi"/>
+
+    <CheckBox
+        android:textColor="@color/white"
+        android:id="@+id/checkbox_restroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/restroom"/>
+
+    <CheckBox
+        android:textColor="@color/white"
+        android:id="@+id/checkbox_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bar"/>
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="@string/opening_hours" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:textColor="@color/white"
+                        android:id="@+id/checkbox_monday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/monday"
+                        android:onClick="onCheckBoxMondayClicked"/>
+
+                    <Spinner
+                        android:textColor="@color/white"
+                        android:id="@+id/spinnerOpeningMonday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        android:minHeight="48dp"
+                        android:visibility="gone"/>
+
+                    <Spinner
+                        android:textColor="@color/white"
+                        android:id="@+id/spinnerEndingMonday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        android:minHeight="48dp"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:textColor="@color/white"
+                        android:id="@+id/checkbox_tuesday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tuesday"
+                        android:onClick="onCheckBoxTuesdayClicked"/>
+
+                    <Spinner
+                        android:textColor="@color/white"
+                        android:id="@+id/spinnerOpeningTuesday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        android:minHeight="48dp"
+                        android:visibility="gone"/>
+
+                    <Spinner
+                        android:textColor="@color/white"
+                        android:id="@+id/spinnerEndingTuesday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        android:minHeight="48dp"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:textColor="@color/white"
+                        android:id="@+id/checkbox_wednesday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wednesday"
+                        android:onClick="onCheckBoxWednesdayClicked"/>
+
+                    <Spinner
+                        android:textColor="@color/white"
+                        android:id="@+id/spinnerOpeningWednesday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        android:minHeight="48dp"
+                        android:visibility="gone"/>
+
+                    <Spinner
+                        android:textColor="@color/white"
+                        android:id="@+id/spinnerEndingWednesday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        android:minHeight="48dp"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:textColor="@color/white"
+                        android:id="@+id/checkbox_thursday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/thursday"
+                        android:onClick="onCheckBoxThursdayClicked"/>
+
+                    <Spinner
+                        android:textColor="@color/white"
+                        android:id="@+id/spinnerOpeningThursday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        android:minHeight="48dp"
+                        android:visibility="gone"/>
+
+                    <Spinner
+                        android:textColor="@color/white"
+                        android:id="@+id/spinnerEndingThursday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        android:minHeight="48dp"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:textColor="@color/white"
+                        android:id="@+id/checkbox_friday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/friday"
+                        android:onClick="onCheckBoxFridayClicked"/>
+
+                    <Spinner
+                        android:textColor="@color/white"
+                        android:id="@+id/spinnerOpeningFriday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        android:minHeight="48dp"
+                        android:visibility="gone"/>
+
+                    <Spinner
+                        android:textColor="@color/white"
+                        android:id="@+id/spinnerEndingFriday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        android:minHeight="48dp"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:textColor="@color/white"
+                        android:id="@+id/checkbox_saturday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/saturday"
+                        android:onClick="onCheckBoxSaturdayClicked"/>
+
+                    <Spinner
+                        android:textColor="@color/white"
+                        android:id="@+id/spinnerOpeningSaturday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        android:minHeight="48dp"
+                        android:visibility="gone"/>
+
+                    <Spinner
+                        android:textColor="@color/white"
+                        android:id="@+id/spinnerEndingSaturday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        android:minHeight="48dp"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:textColor="@color/white"
+                        android:id="@+id/checkbox_sunday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sunday"
+                        android:onClick="onCheckBoxSundayClicked"/>
+
+                    <Spinner
+                        android:textColor="@color/white"
+                        android:id="@+id/spinnerOpeningSunday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        android:minHeight="48dp"
+                        android:visibility="gone"/>
+
+                    <Spinner
+                        android:textColor="@color/white"
+                        android:id="@+id/spinnerEndingSunday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/app_name"
+                        android:minHeight="48dp"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:backgroundTint="@color/background_green"
+        android:id="@+id/buttonAddCourtToFirebase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_court" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">ProjectFoot</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string-array name="opening_closing">
+
+        <item>00:00</item>
+        <item>01:00</item>
+        <item>02:00</item>
+        <item>03:00</item>
+        <item>04:00</item>
+        <item>05:00</item>
+        <item>06:00</item>
+        <item>07:00</item>
+        <item>08:00</item>
+        <item>09:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>17:00</item>
+        <item>18:00</item>
+        <item>19:00</item>
+        <item>20:00</item>
+        <item>21:00</item>
+        <item>22:00</item>
+        <item>23:00</item>
+
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="turn_on_location">Por favor, ligue a sua localização</string>
+    <string name="saving_court">Salvando quadra</string>
+    <string name="add_1_image">Adicione pelo menos uma imagem</string>
+    <string name="add_1_opening_hour">Adicione pelo menos um horário de funcionamento</string>
+    <string name="put_valid_address">Coloque um endereço válido</string>
+    <string name="permissions_denied">Permissões Negadas</string>
+    <string name="accept_permissions">Aceite as permissões</string>
+    <string name="confirm">Confirmar</string>
+    <string name="account_created">Conta criada com sucesso</string>
+    <string name="existing_user">Usuário existente</string>
+    <string name="authentication_error">Erro de autenticação</string>
+    <string name="fill_all_fields">Preencha todos os campos</string>
+    <string name="registration_successful">Sucesso ao registrar usuário</string>
+    <string name="error_on_image_upload">Erro no upload da imagem</string>
+    <string name="court_name">Nome da quadra</string>
+    <string name="address">Endereço</string>
+    <string name="wifi">Wi-fi</string>
+    <string name="restroom">Vestiário</string>
+    <string name="bar">Bar</string>
+    <string name="create_court">Cadastrar Quadra</string>
+    <string name="login">Login</string>
+    <string name="password">Senha</string>
+    <string name="sign_in">Logar</string>
+    <string name="sign_up_if_not_registered">Não tem uma conta? Cadastre-se</string>
+    <string name="type_your_name">Digite seu nome</string>
+    <string name="type_your_email">Digite seu email</string>
+    <string name="type_your_password">Digite sua senha</string>
+    <string name="sign_up">Cadastrar</string>
+    <string name="player">Jogador</string>
+    <string name="court_owner">Dono de quadra</string>
+    <string name="update_court">Atualizar Quadra</string>
+    <string name="loading">Loading</string>
+    <string name="name">nome</string>
+    <string name="add_court">Adicionar Quadra</string>
+    <string name="email">Email</string>
+    <string name="logout">Deslogar</string>
+    <string name="contact_phone">Telefone de contato</string>
+    <string name="opening_hours">Horário de Funcionamento</string>
+    <string name="monday">Segunda</string>
+    <string name="tuesday">Terça</string>
+    <string name="wednesday">Quarta</string>
+    <string name="thursday">Quinta</string>
+    <string name="friday">Sexta</string>
+    <string name="saturday">Sábado</string>
+    <string name="sunday">Domingo</string>
+    <string name="opening_monday">Seg - 00h às 00h</string>
+    <string name="opening_tuesday">Ter - 00h às 00h</string>
+    <string name="opening_wednesday">Qua - 00h às 00h</string>
+    <string name="opening_thursday">Qui - 00h às 00h</string>
+    <string name="opening_friday">Sex - 00h às 00h</string>
+    <string name="opening_saturday">Sáb - 00h às 00h</string>
+    <string name="opening_sunday">Dom - 00h às 00h</string>
+    <string name="default_phone">(XX)XXXXXXXXX</string>
+    <string name="to">às</string>
+    <string name="sun">Dom</string>
+    <string name="mon">Seg</string>
+    <string name="tu">Ter</string>
+    <string name="wed">Qua</string>
+    <string name="th">Qui</string>
+    <string name="fri">Sex</string>
+    <string name="sat">Sáb</string>
+    <string name="delete_court">Excluir quadra</string>
+    <string name="delete_court_confirmation">Você tem certeza que deseja excluir essa quadra?</string>
+    <string name="cancel">Cancelar</string>
+    <string name="canceled">Cancelado</string>
+    <string name="rent_court">Alugar Quadra</string>
+</resources>
